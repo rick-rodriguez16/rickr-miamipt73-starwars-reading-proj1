@@ -4,7 +4,7 @@ import Card from './Card.jsx';
 const CardList = ({ array, imageURL }) => {
     return (
         <>
-            <div className="d-flex gap-3 overflow-auto">
+            <div className="row d-flex flex-nowrap overflow-auto">
                 {
                     array.map(item => {
                         return (

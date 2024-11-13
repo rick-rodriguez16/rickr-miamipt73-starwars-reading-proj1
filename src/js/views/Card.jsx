@@ -1,15 +1,15 @@
 import React from 'react';
 
 const style = {
-    width: "18rem",
+    width: "20rem",
 }
 
 const Card = ({ id, name, imageURL }) => {
 
     return (
         <>
-            <div className="card" style={style}>
-                <img 
+            <div className="card me-3 p-0 bg-dark" style={style}>
+                <img
                     src={ 
                         name === "Tatooine"
                         ?
@@ -17,11 +17,11 @@ const Card = ({ id, name, imageURL }) => {
                         :
                         `${imageURL}/${id}.jpg`
                     } 
-                    className="card-img-top" alt="..." />
-                <div className="card-body">
-                    <h5 className="card-title">{name}</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                    className="card-img-top border" alt="..." 
+                />
+                <div className="card-body text-center">
+                    <h5 className="card-title my-2 text-light">{name}</h5>
+                    <a href="#" className="btn btn-primary mt-2">More Info</a>
                 </div>
             </div>
         </>
